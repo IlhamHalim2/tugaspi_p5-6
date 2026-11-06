@@ -1,0 +1,338 @@
+/* --- Global Styles & Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.ilham_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navbar --- */
+#ilham_header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ilham_nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.ilham_logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.ilham_navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.ilham_navbar a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.ilham_navbar a:hover {
+    color: #2563eb;
+}
+
+/* --- Section Title --- */
+.ilham_section_title {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* --- Hero Section --- */
+.ilham_hero_section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.ilham_hero_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.ilham_hero_text {
+    flex: 1;
+}
+
+.ilham_greeting {
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+.ilham_hero_text h1 {
+    font-size: 2.8rem;
+    color: #1e3a8a;
+    margin: 5px 0;
+}
+
+.ilham_subheading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.ilham_description {
+    color: #64748b;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+.ilham_hero_buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.ilham_btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.ilham_btn_primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.ilham_btn_primary:hover {
+    background-color: #1d4ed8;
+}
+
+.ilham_btn_secondary {
+    background-color: #ffffff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+}
+
+.ilham_btn_secondary:hover {
+    background-color: #eff6ff;
+}
+
+.ilham_hero_image img {
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover; /* Agar gambar terpotong proporsional dan tidak gepeng */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* --- About Section --- */
+.ilham_about_section {
+    padding: 70px 0;
+    background-color: #ffffff;
+}
+
+.ilham_about_content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.ilham_about_text {
+    flex: 2;
+}
+
+.ilham_about_text p {
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.ilham_contact_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.ilham_about_image {
+    flex: 1;
+    text-align: center;
+}
+
+.ilham_about_image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* --- Skills Section --- */
+.ilham_skills_section {
+    padding: 70px 0;
+}
+
+.ilham_skills_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.ilham_skill_card {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: #334155;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.ilham_skill_card i {
+    font-size: 1.4rem;
+}
+
+/* --- Projects Section --- */
+.ilham_projects_section {
+    padding: 70px 0;
+    background-color: #ffffff;
+}
+
+.ilham_projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.ilham_project_card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s;
+}
+
+.ilham_project_card:hover {
+    transform: translateY(-5px);
+}
+
+.ilham_project_card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.ilham_project_info {
+    padding: 20px;
+}
+
+.ilham_project_info h3 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.ilham_project_info p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.ilham_project_info a {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* --- Footer Section --- */
+#ilham_footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.ilham_footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #334155;
+}
+
+.ilham_footer_left h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ilham_footer_left p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.ilham_footer_right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.ilham_copyright {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+/* --- Responsive Breakdown --- */
+@media (max-width: 768px) {
+    .ilham_hero_content, 
+    .ilham_about_content,
+    .ilham_footer_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ilham_hero_buttons, .ilham_contact_info {
+        justify-content: center;
+    }
+}
